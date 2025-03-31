@@ -24,11 +24,12 @@ const AdminHome = () => {
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-6">
-                    <div className="p-6 bg-gray-800 shadow-lg rounded-2xl hover:shadow-xl transition-all duration-300">
-                        <Analytics />
+                    <div className="p-6  rounded-2xl hover:shadow-xl transition-all duration-300">
+                    <Report />
+                       
                     </div>
-                    <div className="p-6 bg-gray-800 shadow-lg rounded-2xl hover:shadow-xl transition-all duration-300">
-                        <Report />
+                    <div className="p-6   rounded-2xl hover:shadow-xl transition-all duration-300">
+                    <Analytics /> 
                     </div>
                 </div>
             </Container>

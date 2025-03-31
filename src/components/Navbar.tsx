@@ -15,7 +15,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar bg-blue-400 text-black">
+    <div className="navbar bg-blue-100 text-black text-xl">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -34,7 +34,7 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-blue-400 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            className="menu menu-sm dropdown-content bg-blue-400 rounded-box z-[1] mt-3 w-52 p-2 shadow text-xl">
             <li>
               <Link to="/"><FaHome className="mr-2" /> Home</Link>
             </li>
@@ -46,10 +46,10 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">Enuma Car Rental Services</a>
+        <a className="btn btn-ghost text-2xl">Enuma Car Rental Services</a>
       </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
+      <div className="navbar-center hidden lg:flex text-2xl">
+        <ul className="menu menu-horizontal px-1 text-xl">
           <li>
             <Link to="/"><FaHome className="mr-2" /> Home</Link>
           </li>
@@ -77,15 +77,15 @@ const Navbar = () => {
                 <Link to="/dashboard">
                   <FaUserCircle className="mr-2" /> Dashboard
                 </Link>
-                <button onClick={handleLogout} className="flex items-center">
-                  <FaSignOutAlt className="mr-2" /> Logout
+                <button onClick={handleLogout} className="flex items-center text-xl">
+                  <FaSignOutAlt className="mr-2 text-xl" /> Logout
                 </button>
               </li>
             </ul>
           </div>
         ) : (
           <Link to="/login">
-            <a className="btn btn-primary flex items-center"><FaSignInAlt className="mr-2" /> Login</a>
+            <a className="btn btn-primary flex items-center text-xl"><FaSignInAlt className="mr-2 text-xl" /> Login</a>
           </Link>
         )}
       </div>

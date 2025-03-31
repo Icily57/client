@@ -106,41 +106,41 @@ const AdminNav = () => {
       </div>
 
       {/* Desktop Menu */}
-      <div className="navbar-center hidden lg:flex">
+      <div className="navbar-center hidden  lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
             <Link to="/admin">
-              <FaHome className="mr-2" /> Home
+              <FaHome className="mr-1" /> Home
             </Link>
           </li>
           <li>
             <Link to="/dashboard/admin/users">
-              <FaUsers className="mr-2" /> All Users
+              <FaUsers className="mr-1" /> All Users
             </Link>
           </li>
           <li>
             <Link to="/dashboard/admin/bookings">
-              <FaCalendarAlt className="mr-2" /> Bookings
+              <FaCalendarAlt className="mr-1" /> Bookings
             </Link>
           </li>
           <li>
             <Link to="/dashboard/admin/payments">
-              <FaCreditCard className="mr-2" /> Payments
+              <FaCreditCard className="mr-1" /> Payments
             </Link>
           </li>
           <li>
             <Link to="/dashboard/admin/vehicles-specs">
-              <FaCar className="mr-2" /> Vehicles Specs
+              <FaCar className="mr-1" /> Vehicles Specs
             </Link>
           </li>
           <li>
             <Link to="/admin/vehicles">
-              <FaCar className="mr-2" /> All Vehicles
+              <FaCar className="mr-1" /> All Vehicles
             </Link>
           </li>
           <li>
             <Link to="/dashboard/admin/me">
-              <FaUserCircle className="mr-2" /> My Profile
+              <FaUserCircle className="mr-1" /> My Profile
             </Link>
           </li>
         </ul>
@@ -151,14 +151,14 @@ const AdminNav = () => {
         {isAuthenticated ? (
           <div className="dropdown dropdown-end">
             <span>
-              <a className="btn btn-ghost">Welcome, {user.full_name}</a>
+              <a className="btn btn-ghost">Hello, {user.full_name}</a>
             </span>
-            <div tabIndex={0} className="m-1 btn btn-ghost">
-              <FaUserCircle className="h-5 w-5" />
+            <div tabIndex={0} className="m-0 btn btn-ghost">
+              <FaUserCircle className="h-3 w-3" />
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-blue-50 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-blue-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
               <li>
                 <button onClick={handleLogout} className="flex items-center">

@@ -92,7 +92,7 @@ console.log(bookingData, "bookingData")
       <h1 className="text-4xl font-extrabold mb-8 text-black text-center">Analytics</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-4xl">
         {/* Total Bookings */}
-        <div className="card text-black bg-blue-300 shadow-lg rounded-lg transform hover:scale-105 transition-transform duration-300 p-6 flex items-center">
+        <div className="card mb-8 text-black bg-blue-300 shadow-lg rounded-lg transform hover:scale-105 transition-transform duration-300 p-6 flex items-center">
           <FaCalendarAlt className="text-4xl mr-4" />
           <div className="card-body text-center">
             <h2 className="text-xl font-bold">Total Bookings</h2>
@@ -100,7 +100,7 @@ console.log(bookingData, "bookingData")
           </div>
         </div>
         {/* Total Revenue */}
-        <div className="card text-black bg-blue-300 shadow-lg rounded-lg transform hover:scale-105 transition-transform duration-300 p-6 flex items-center">
+        <div className="card mb-8 text-black bg-blue-300 shadow-lg rounded-lg transform hover:scale-105 transition-transform duration-300 p-6 flex items-center">
           <FaMoneyBillWave className="text-4xl mr-4" />
           <div className="card-body text-center">
             <h2 className="text-xl font-bold">Total Revenue</h2>

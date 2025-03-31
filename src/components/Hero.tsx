@@ -20,25 +20,25 @@ const images = [Benefit1, Benefit2, Benefit3, Benefit4, Benefit5, Benefit6, Bene
 
 export default function Hero() {
   return (
-    <div className="hero h-fit mb-20 bg-gradient-to-b from-blue-600 via-blue-400 to-blue-900 text-white py-16">
+    <div className="hero h-fit mb-20 bg-gradient-to-b from-blue-800 via-blue-600 to-blue-900 text-white py-16">
       <div className="hero-content grid md:grid-cols-2 sm:gap-10 items-center px-8 max-w-6xl mx-auto">
         <div>
           <h1 className="text-6xl font-extrabold leading-tight">
-            Your Dream Car, <span className="text-blue-400">Your Adventure.</span> <br />
-            <span className="text-gray-400">No Ownership? No Problem!</span>
+            Your Dream Car, <span className="text-black">Your Adventure.</span> <br />
+            <span className="text-white">No Ownership? No Problem!</span>
           </h1>
-          <p className="py-6 text-lg text-gray-300">
+          <p className="py-6 text-lg text-black">
             Imagine cruising in your dream car—feeling the power, the luxury, the thrill.  
             At <span className="font-bold text-purple-400">Enuma Car Rental Services</span>, we make that dream <span className="font-bold">real. </span> 
             No hefty price tags, no long-term commitments—just <span className="font-bold">affordable, seamless rentals</span> tailored for you.
           </p>
-          <p className="text-md text-gray-500 italic">
+          <p className="text-md text-white italic">
             Whether it's a business trip, a weekend getaway, or a joyride in the car you’ve always wanted,  
             we’ve got you covered.
           </p>
           <Link to="/register">
-            <button className="mt-4 bg-blue-500 hover:bg-blue-600 text-black px-6 py-3 rounded-lg shadow-xl transition-all duration-300 font-semibold 
-                animate-pulse ring-2 ring-blue-400 hover:ring-blue-500">
+            <button className="mt-4 text-lg bg-blue-500 hover:bg-blue-500 text-black px-6 py-3 rounded-lg shadow-xl transition-all duration-300 font-semibold 
+                animate-pulse ring-2 ring-blue-500 hover:ring-blue-500">
               Start Your Journey 🚗💨
             </button>
           </Link>

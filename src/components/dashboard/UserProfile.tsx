@@ -54,7 +54,7 @@ const UserProfile: React.FC = () => {
             </div>
           </div>
           <div className="space-y-6">
-            <div className="flex flex-row justify-between items-center mb-4">
+            <div className="flex flex-row justify-evenly items-center mb-4">
             <div className="flex flex-col mr-2 space-y-4">
               <label htmlFor="full_name" className="text-sm font-semibold text-black">Full Name</label>
               <input
@@ -80,7 +80,7 @@ const UserProfile: React.FC = () => {
               />
             </div>
             </div>
-            <div className="flex flex-row justify-between items-center mb-4">
+            <div className="flex flex-row justify-evenly items-center mb-4">
             <div className="flex flex-col space-y-4">
               <label htmlFor="contact_phone" className="text-sm font-semibold text-gray-800">Contact Phone</label>
               <input
