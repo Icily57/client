@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div>
         <Navbar />
-      <Container className="bg-gradient-to-b from-blue-500 to-blue-700 min-h-screen flex flex-col justify-between">
+      <Container>
         <Hero/>
         {/* <Benefits data={benefitOne} />  */}
       </Container>
