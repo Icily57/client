@@ -24,7 +24,7 @@ const VehicleDetails: React.FC = () => {
   const { data: carWithDetails, error, isLoading } = vehiclesApi.useGetOneVehicleWithDetailsByIdQuery(vehicle_id);
 
   const { register, handleSubmit, watch, formState: { errors } } = useForm<BookingDetails>();
-console.log(errors)
+console.log("carWithDetails", carWithDetails);
   const [total_amount, setAmount] = useState<number>(0);
   const rentalRate = carWithDetails?.rental_rate ? parseFloat(carWithDetails.rental_rate) : 0;
 
