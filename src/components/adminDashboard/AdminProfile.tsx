@@ -12,7 +12,7 @@ const AdminProfile: React.FC = () => {
     contact_phone: user?.contact_phone || '',
     address: user?.address || '',
   });
-  const [updateProfile, { isLoading: isUpdating }] = usersApi.useUpdateUserMutation(); // Assuming a mutation for updating profile
+  const [updateProfile] = usersApi.useUpdateUserMutation(); // Assuming a mutation for updating profile
 
   useEffect(() => {
     if (user) {
